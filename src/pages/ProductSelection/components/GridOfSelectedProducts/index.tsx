@@ -1,0 +1,1 @@
+export { GridOfSelectedProducts } from "./GridOfSelectedProducts";

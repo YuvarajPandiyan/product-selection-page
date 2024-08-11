@@ -14,6 +14,7 @@ import { productSelectionPageNavActions } from "./generator";
 const ProductSelection = memo(() => {
   const [state, setState] = useState<stateValueType>(INITIAL_STATE);
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [_, setNavbarState] = useContext(NavbarContext);
 
   const handleOnClick = useCallback(() => {
@@ -41,7 +42,7 @@ const ProductSelection = memo(() => {
   return (
     <>
       <Helmet>
-        <title>axiamatic | Product select page</title>
+        <title>axima | Product select page</title>
       </Helmet>
       <ProductSelectionContext.Provider value={[state, setState]}>
         <div className="flex justify-center items-center w-full h-[90vh]">
